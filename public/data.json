@@ -1,0 +1,242 @@
+[
+  {
+    "category": "T-Shirt",
+    "title": "Classic Cotton Tee",
+    "details": "Soft 100% cotton t-shirt with a regular fit and round neck.",
+    "price": 850,
+    "color": "White",
+    "available": true
+  },
+  {
+    "category": "Jeans",
+    "title": "Slim Fit Denim",
+    "details": "Dark blue slim-fit jeans with stretchable fabric for comfort.",
+    "price": 2200,
+    "color": "Navy Blue",
+    "available": true
+  },
+  {
+    "category": "Hoodie",
+    "title": "Winter Fleece Hoodie",
+    "details": "Warm fleece hoodie with adjustable drawstrings and kangaroo pocket.",
+    "price": 1950,
+    "color": "Gray",
+    "available": false
+  },
+  {
+    "category": "Jacket",
+    "title": "Leather Bomber Jacket",
+    "details": "Genuine leather bomber jacket with ribbed cuffs and zip closure.",
+    "price": 7500,
+    "color": "Brown",
+    "available": true
+  },
+  {
+    "category": "Shirt",
+    "title": "Formal Oxford Shirt",
+    "details": "Button-down shirt made from premium oxford fabric, perfect for office wear.",
+    "price": 1600,
+    "color": "Sky Blue",
+    "available": true
+  },
+  {
+    "category": "Dress",
+    "title": "Floral Summer Dress",
+    "details": "Lightweight cotton dress with floral prints and a relaxed fit.",
+    "price": 1850,
+    "color": "Yellow",
+    "available": true
+  },
+  {
+    "category": "Sweater",
+    "title": "Woolen Crew Neck Sweater",
+    "details": "Soft wool sweater with ribbed hem and cuffs, ideal for winter layering.",
+    "price": 2100,
+    "color": "Maroon",
+    "available": false
+  },
+  {
+    "category": "Shorts",
+    "title": "Casual Cotton Shorts",
+    "details": "Breathable cotton shorts with adjustable waistband and two side pockets.",
+    "price": 950,
+    "color": "Khaki",
+    "available": true
+  },
+  {
+    "category": "Skirt",
+    "title": "Pleated Midi Skirt",
+    "details": "Chiffon pleated skirt with elastic waistband and lightweight feel.",
+    "price": 1750,
+    "color": "Peach",
+    "available": true
+  },
+  {
+    "category": "Jacket",
+    "title": "Denim Oversized Jacket",
+    "details": "Light wash oversized denim jacket with distressed finish.",
+    "price": 2800,
+    "color": "Light Blue",
+    "available": true
+  },
+  {
+    "category": "T-Shirt",
+    "title": "Graphic Street Tee",
+    "details": "Bold streetwear-style t-shirt with high-quality printed artwork.",
+    "price": 1200,
+    "color": "Black",
+    "available": true
+  },
+  {
+    "category": "Shirt",
+    "title": "Casual Linen Shirt",
+    "details": "Breathable linen shirt perfect for summer outings.",
+    "price": 1900,
+    "color": "Beige",
+    "available": true
+  },
+  {
+    "category": "Hoodie",
+    "title": "Oversized Comfort Hoodie",
+    "details": "Loose-fit hoodie with soft fleece lining and thick drawstrings.",
+    "price": 2300,
+    "color": "Olive Green",
+    "available": true
+  },
+  {
+    "category": "Jeans",
+    "title": "Straight Fit Denim",
+    "details": "Classic straight-fit jeans with durable stitching.",
+    "price": 2100,
+    "color": "Dark Blue",
+    "available": true
+  },
+  {
+    "category": "Sweater",
+    "title": "Cable Knit Sweater",
+    "details": "Elegant cable-knit wool sweater for cold seasons.",
+    "price": 2500,
+    "color": "Cream",
+    "available": false
+  },
+  {
+    "category": "Jacket",
+    "title": "Windbreaker Sports Jacket",
+    "details": "Lightweight windbreaker with water-resistant outer shell.",
+    "price": 3200,
+    "color": "Red",
+    "available": true
+  },
+  {
+    "category": "Shorts",
+    "title": "Athletic Training Shorts",
+    "details": "Moisture-wicking shorts designed for sports activities.",
+    "price": 1100,
+    "color": "Black",
+    "available": true
+  },
+  {
+    "category": "Dress",
+    "title": "Evening Silky Dress",
+    "details": "Elegant silky evening dress with a slim-fit design.",
+    "price": 3400,
+    "color": "Navy Blue",
+    "available": false
+  },
+  {
+    "category": "Skirt",
+    "title": "A-Line Cotton Skirt",
+    "details": "Comfortable A-line skirt made from premium cotton.",
+    "price": 1650,
+    "color": "Mint Green",
+    "available": true
+  },
+  {
+    "category": "T-Shirt",
+    "title": "Vintage Washed Tee",
+    "details": "Soft washed fabric giving a vintage faded look.",
+    "price": 950,
+    "color": "Rust Orange",
+    "available": true
+  },
+  {
+    "category": "Shirt",
+    "title": "Checkered Flannel Shirt",
+    "details": "Warm flannel shirt suitable for winter casual wear.",
+    "price": 1750,
+    "color": "Red & Black",
+    "available": true
+  },
+  {
+    "category": "Jacket",
+    "title": "Puffer Winter Jacket",
+    "details": "Thick insulated puffer designed for extreme cold.",
+    "price": 5400,
+    "color": "Black",
+    "available": true
+  },
+  {
+    "category": "Sweater",
+    "title": "Turtleneck Knit Sweater",
+    "details": "Soft knit turtleneck sweater with a modern fit.",
+    "price": 2200,
+    "color": "Dark Green",
+    "available": true
+  },
+  {
+    "category": "Shorts",
+    "title": "Denim Cutoff Shorts",
+    "details": "Stylish ripped denim shorts with frayed edges.",
+    "price": 1250,
+    "color": "Light Blue",
+    "available": true
+  },
+  {
+    "category": "Dress",
+    "title": "Elegant Maxi Dress",
+    "details": "Flowy maxi dress with lightweight fabric and side slit.",
+    "price": 3000,
+    "color": "Wine Red",
+    "available": true
+  },
+  {
+    "category": "Hoodie",
+    "title": "Minimalist Zip Hoodie",
+    "details": "Simple full-zip hoodie with a clean, modern design.",
+    "price": 2000,
+    "color": "White",
+    "available": false
+  },
+  {
+    "category": "Jeans",
+    "title": "Ripped Skinny Jeans",
+    "details": "Stretch fit skinny jeans with distressed styling.",
+    "price": 2400,
+    "color": "Black",
+    "available": true
+  },
+  {
+    "category": "Shirt",
+    "title": "Classic Polo Shirt",
+    "details": "Premium cotton polo shirt with soft collar.",
+    "price": 1300,
+    "color": "Green",
+    "available": true
+  },
+  {
+    "category": "Jacket",
+    "title": "Rainproof Travel Jacket",
+    "details": "Waterproof jacket with breathable mesh lining.",
+    "price": 2900,
+    "color": "Teal",
+    "available": true
+  },
+  {
+    "category": "Skirt",
+    "title": "High-Waist Denim Skirt",
+    "details": "Trendy high-waist denim skirt with a button-front design.",
+    "price": 1500,
+    "color": "Blue",
+    "available": true
+  }
+]
