@@ -4,10 +4,11 @@ import React from 'react';
 
 const Product = (prop: {product: TProduct}) => {
 
-    const { category, title, details, price, color, available } = prop.product
+    const { id, category, title, details, price, color, available } = prop.product
 
     return (
         <div>
+            <p>id: {id}</p>
             <p>category: {category}</p>
             <p>title: {title}</p>
             <p>details: {details}</p>

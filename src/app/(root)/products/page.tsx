@@ -1,3 +1,4 @@
+import Categories from '@/components/Categories';
 import Product from '@/components/Product';
 import { TProduct } from '@/types/Types';
 import React from 'react';
@@ -9,6 +10,7 @@ const page = async() => {
     return (
         <>
         <p>products</p>
+        <Categories></Categories>
         <div className="grid grid-cols-5 gap-8">
             {
                 data.map((product: TProduct, key: number) => <Product product={product} key={key}></Product>)
