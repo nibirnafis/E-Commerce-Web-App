@@ -1,21 +1,32 @@
 import { TProduct } from '@/types/Types';
+import Image from 'next/image';
 import React from 'react';
 
 
 const Product = (prop: {product: TProduct}) => {
 
-    const { id, category, title, details, price, color, available } = prop.product
+    const { title, img_url, price } = prop.product
 
     return (
-        <div>
-            <p>id: {id}</p>
-            <p>category: {category}</p>
-            <p>title: {title}</p>
-            <p>details: {details}</p>
-            <p>price: {price} Tk.</p>
-            <p>color: {color}</p>
-            <p>stock: {available ? "Available" : "Not Available"}</p>
+        <>
+        <div className='flex flex-col m-auto w-full h-full relative'>
+            <div className='flex flex-col-reverse bg-blue w-full h-[287px] rounded-4xl'>
+                <div className='pb-4'>
+                    <p className='text-center font-inter text-cyan text-sml'>{title}</p>
+                    <p className='text-center font-inter text-orange text-sml'>{price} Tk.</p>
+                </div>
+            </div>
+            <div className='overflow-clip w-full h-[223px] rounded-4xl absolute'>
+                <Image
+                    className="w-full h-full object-cover"
+                    src={img_url}
+                    alt="Cover Picture 1"
+                    width={1024}
+                    height={1024}>
+                </Image>
+            </div>
         </div>
+        </>
     );
 };
 

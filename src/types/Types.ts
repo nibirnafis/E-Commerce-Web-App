@@ -3,6 +3,7 @@ export type TProduct = {
     category: string,
     title: string,
     details: string,
+    img_url: string,
     price: number,
     color: string,
     available: boolean

@@ -15,9 +15,6 @@ const page = () => {
         const details = form.details.value;
         const price = Number(form.price.value);
         const color = form.color.value;
-        // const available = form.available.value;
-
-        // console.log(category, title, details, price, color, available)
 
         const product = { category, title, details, price, color }
 

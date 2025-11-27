@@ -20,6 +20,7 @@ model Product {
   category  String
   title     String
   details   String
+  img_url   String
   price     Int
   color     String
   available Boolean  @default(true)

@@ -1,8 +1,13 @@
+import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="">
-            <p>Footer</p>
+        <div className="bg-blue">
+            <div className="reponsive footer">
+                <Link href="/">
+                    <p className='font-ironManOfWar text-med'>CLORR</p>
+                </Link>
+            </div>
         </div>
     );
 };

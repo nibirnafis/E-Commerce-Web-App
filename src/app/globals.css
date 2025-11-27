@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+
+@font-face {
+  font-family: "IronManOfWar";
+  src: url("/Fonts/IRON_MAN_OF_WAR_002_NCV.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap") format("truetype");
+}
+
+
+
+
+@theme{
+    --color-cyan : #21C7C7;
+    --color-orange : #D3991D;
+    --color-blue : #1F2330;
+    --color-black : #1D1D1D;
+
+    --text-exsml: .75rem;
+    --text-sml: 1rem;
+    --text-reg: 1.5rem;
+    --text-med: 2rem;
+    --text-lrg: 4rem;
+
+    --font-ironManOfWar: "IronManOfWar", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+
+
+
+
+@layer components {
+
+    .reponsive{
+        /* @apply max-w-[360px] md:max-w-[620px] lg:max-w-[1440px] */
+        @apply max-w-[1440px] px-8
+    }
+
+    
+    .navbar{
+        @apply flex justify-between items-center my-4 mx-auto text-cyan
+    }
+    
+    
+    .footer{
+        @apply flex justify-between items-center my-4 mx-auto text-cyan
+    }
+
+
+
+
+    
+    .section-text{
+
+        @apply text-center my-[88px];
+
+        @layer base{
+            h1{
+                @apply font-ironManOfWar text-lrg text-cyan pb-4
+            }
+            h6{
+                @apply font-inter text-sml text-cyan tracking-[.1rem]
+            }
+        }
+    }
+
+}
