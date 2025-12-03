@@ -1,0 +1,32 @@
+[
+    {
+        "serial": 1,
+        "title": "TROUSERS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764182646/product_pant_1_n1s9bs.png"
+    },
+    {
+        "serial": 2,
+        "title": "PANTS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764184447/product_pants_1_lvndsa.png"
+    },
+    {
+        "serial": 3,
+        "title": "JEANS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764182646/product_jeans_1_pi4fmw.png"
+    },
+    {
+        "serial": 4,
+        "title": "SHIRTS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764182647/product_shirt_1_nsks6z.png"
+    },
+    {
+        "serial": 5,
+        "title": "JACKETS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764182646/product_jacket_1_egqxrc.png"
+    },
+    {
+        "serial": 6,
+        "title": "T-SHIRTS",
+        "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764182646/product_t-shirt_1_apohoj.png"
+    }
+]

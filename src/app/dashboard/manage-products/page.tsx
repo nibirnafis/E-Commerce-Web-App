@@ -13,17 +13,19 @@ const page = () => {
         const category = form.category.value;
         const title = form.Title.value;
         const details = form.details.value;
+        const img_url = form.img_url.value;
         const price = Number(form.price.value);
         const color = form.color.value;
 
-        const product = { category, title, details, price, color }
+        const product = { category, title, details, img_url, price, color }
 
-        await fetch("/api/products", {
+        const result = await fetch("http://localhost:3000/api/dashboard/manage-products", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(product)
         })
 
+        console.log(result)
         form.reset()
     }
 
@@ -40,6 +42,9 @@ const page = () => {
 
                 <label htmlFor='details'>Details: </label>
                 <input type="text" name='details' required/>
+                
+                <label htmlFor='img_url'>Image URL: </label>
+                <input type="text" name='img_url' required/>
 
                 <label htmlFor='price'>Price: </label>
                 <input type="number" name='price' required/>

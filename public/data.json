@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "category": "T-Shirt",
     "title": "Classic Cotton Tee",
     "details": "Soft 100% cotton t-shirt with a regular fit and round neck.",
@@ -9,15 +10,17 @@
     "available": true
   },
   {
+    "id": 2,
     "category": "Jeans",
     "title": "Slim Fit Denim",
     "details": "Dark blue slim-fit jeans with stretchable fabric for comfort.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1763994369/generated_85131602-a989-4f0e-a6e5-bcd8b5b90d36_ncb3no.png",
     "price": 2200,
-    "color": "Navy Blue",
+    "color": "Blue",
     "available": true
   },
   {
+    "id": 3,
     "category": "Hoodie",
     "title": "Winter Fleece Hoodie",
     "details": "Warm fleece hoodie with adjustable drawstrings and kangaroo pocket.",
@@ -27,6 +30,7 @@
     "available": false
   },
   {
+    "id": 4,
     "category": "Jacket",
     "title": "Leather Bomber Jacket",
     "details": "Genuine leather bomber jacket with ribbed cuffs and zip closure.",
@@ -36,15 +40,17 @@
     "available": true
   },
   {
+    "id": 5,
     "category": "Shirt",
     "title": "Formal Oxford Shirt",
     "details": "Button-down shirt made from premium oxford fabric, perfect for office wear.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1763994368/generated_d31c8f28-5907-43c6-9e97-876ba53639c3_xfprcc.png",
     "price": 1600,
-    "color": "Sky Blue",
+    "color": "Blue",
     "available": true
   },
   {
+    "id": 6,
     "category": "Dress",
     "title": "Floral Summer Dress",
     "details": "Lightweight cotton dress with floral prints and a relaxed fit.",
@@ -54,8 +60,9 @@
     "available": true
   },
   {
+    "id": 7,
     "category": "Sweater",
-    "title": "Woolen Crew Neck Sweater",
+    "title": "Woolen Crew Neck",
     "details": "Soft wool sweater with ribbed hem and cuffs, ideal for winter layering.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1763994368/generated_b002ae2a-1c69-456a-94d8-04279ffe9143_j2fmbo.png",
     "price": 2100,
@@ -63,6 +70,7 @@
     "available": false
   },
   {
+    "id": 8,
     "category": "Shorts",
     "title": "Casual Cotton Shorts",
     "details": "Breathable cotton shorts with adjustable waistband and two side pockets.",
@@ -72,6 +80,7 @@
     "available": true
   },
   {
+    "id": 9,
     "category": "Skirt",
     "title": "Pleated Midi Skirt",
     "details": "Chiffon pleated skirt with elastic waistband and lightweight feel.",
@@ -81,8 +90,9 @@
     "available": true
   },
   {
+    "id": 10,
     "category": "Jacket",
-    "title": "Denim Oversized Jacket",
+    "title": "Denim Jacket",
     "details": "Light wash oversized denim jacket with distressed finish.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1763994367/generated_65b2f981-0c93-488f-8303-92109612794e_cbzxvv.png",
     "price": 2800,
@@ -90,6 +100,7 @@
     "available": true
   },
   {
+    "id": 11,
     "category": "T-Shirt",
     "title": "Graphic Street Tee",
     "details": "Bold streetwear-style t-shirt with high-quality printed artwork.",
@@ -99,6 +110,7 @@
     "available": true
   },
   {
+    "id": 12,
     "category": "Shirt",
     "title": "Casual Linen Shirt",
     "details": "Breathable linen shirt perfect for summer outings.",
@@ -108,8 +120,9 @@
     "available": true
   },
   {
+    "id": 13,
     "category": "Hoodie",
-    "title": "Oversized Comfort Hoodie",
+    "title": "Comfort Hoodie",
     "details": "Loose-fit hoodie with soft fleece lining and thick drawstrings.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1763994366/generated_09130d90-ecc6-4d52-be8e-fc344853781b_rpum4l.png",
     "price": 2300,
@@ -117,6 +130,7 @@
     "available": true
   },
   {
+    "id": 14,
     "category": "Jeans",
     "title": "Straight Fit Denim",
     "details": "Classic straight-fit jeans with durable stitching.",
@@ -126,6 +140,7 @@
     "available": true
   },
   {
+    "id": 15,
     "category": "Sweater",
     "title": "Cable Knit Sweater",
     "details": "Elegant cable-knit wool sweater for cold seasons.",
@@ -135,8 +150,9 @@
     "available": false
   },
   {
+    "id": 16,
     "category": "Jacket",
-    "title": "Windbreaker Sports Jacket",
+    "title": "Windbreaker Jacket",
     "details": "Lightweight windbreaker with water-resistant outer shell.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764249544/generated_059390f3-df8e-457a-acf8-194f2ac25f5d_exvdmb.png",
     "price": 3200,
@@ -144,8 +160,9 @@
     "available": true
   },
   {
+    "id": 17,
     "category": "Shorts",
-    "title": "Athletic Training Shorts",
+    "title": "Training Shorts",
     "details": "Moisture-wicking shorts designed for sports activities.",
     "img_url": "https://res.cloudinary.com/dcny80yei/image/upload/v1764249544/generated_dbe4c50a-57f3-436f-9e62-8224d5d3c26e_qg7isd.png",
     "price": 1100,
@@ -153,6 +170,7 @@
     "available": true
   },
   {
+    "id": 18,
     "category": "Dress",
     "title": "Evening Silky Dress",
     "details": "Elegant silky evening dress with a slim-fit design.",

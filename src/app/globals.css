@@ -38,17 +38,17 @@
 
     .reponsive{
         /* @apply max-w-[360px] md:max-w-[620px] lg:max-w-[1440px] */
-        @apply max-w-[1440px] px-8
+        @apply max-w-[1440px] px-8 lg:px-0
     }
 
     
     .navbar{
-        @apply flex justify-between items-center my-4 mx-auto text-cyan
+        @apply flex justify-between items-center my-4 mx-auto 
     }
     
     
     .footer{
-        @apply flex justify-between items-center my-4 mx-auto text-cyan
+        @apply flex justify-between items-center my-4 mx-auto
     }
 
 
@@ -57,14 +57,14 @@
     
     .section-text{
 
-        @apply text-center my-[88px];
+        @apply text-center my-16 md:my-[88px] px-8;
 
         @layer base{
             h1{
-                @apply font-ironManOfWar text-lrg text-cyan pb-4
+                @apply font-ironManOfWar text-lrg pb-4
             }
             h6{
-                @apply font-inter text-sml text-cyan tracking-[.1rem]
+                @apply font-inter text-sml tracking-[.1rem]
             }
         }
     }
