@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Image from 'next/image';
 import React from 'react';
 import Popular from './Popular';
 
@@ -10,11 +9,10 @@ import Popular from './Popular';
 gsap.registerPlugin(useGSAP)
 
 
+
 const MostPopular = () => {
 
-
     const [ Populars, setPopulars ] = useState([])
-
 
     useEffect(()=>{
         

@@ -24,21 +24,13 @@ const Popular = ({p}: IProps) => {
     const container = useRef(null)
 
     useGSAP(()=>{
-
-        const tl = gsap.timeline({
+        gsap.to(".scl", {
             scrollTrigger: {
-                trigger: container.current,
-                /* start: 'top bottom',
-                end: 'center center',
-                scrub: true */
+                trigger: container.current
             },
-        })
-
-        tl.to(".scl", {
             height: 512,
-            duration: 2,
-        })
-    }, { scope: container })
+            duration: 2
+        })}, { scope: container })
 
 
 
@@ -52,7 +44,7 @@ const Popular = ({p}: IProps) => {
                 </div>
                 <div className='overflow-clip w-full h-[448px] rounded-4xl absolute'>
                     <Image
-                        className="w-full h-full object-cover"
+                        className="w-full h-full transition-transform hover:scale-110 object-cover"
                         src={img_url}
                         alt="Cover Picture 1"
                         width={778}
@@ -67,7 +59,7 @@ const Popular = ({p}: IProps) => {
                 </div>
                 <div className='overflow-clip w-full h-[448px] rounded-4xl absolute'>
                     <Image
-                        className="w-full h-full object-cover"
+                        className="w-full h-full transition-transform hover:scale-110 object-cover"
                         src={img_url}
                         alt="Cover Picture 1"
                         width={778}

@@ -1,22 +1,53 @@
 import React from 'react';
+import Review from './Review';
 
 const CustomerReview = () => {
     return (
         <div className='flex flex-col gap-8 m-auto font-inter tracking-[.1rem] max-w-[1440px] px-8 pb-24'>
-            <div className='p-8 font-inter  bg-blue rounded-4xl'>
-                <p className='text-cyan text-reg pb-4'>NAFISUL HAQUE KHAN</p>
-                <p className='text-orange text-exsml md:text-sml pl-8'>“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”</p>
-            </div>
-            <div className='p-8 font-inter  bg-blue rounded-4xl'>
-                <p className='text-cyan text-reg pb-4'>SHAWON AHMED</p>
-                <p className='text-orange text-exsml md:text-sml pl-8'>“The winter hoodie I bought is super warm and comfortable. The color looks exactly like the photos. However, the packaging could be better. Overall, very satisfied with the purchase!”</p>
-            </div>
-            <div className='p-8 font-inter  bg-blue rounded-4xl'>
-                <p className='text-cyan text-reg pb-4'>FAHIM HOSSAIN</p>
-                <p className='text-orange text-exsml md:text-sml pl-8'>“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”</p>
-            </div>
+            
+            <Review
+                name="NAFISUL HAQUE KHAN"
+                review="“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”">
+            </Review>
+            
+            <Review
+                name="SHAWON AHMED"
+                review="“The winter hoodie I bought is super warm and comfortable. The color looks exactly like the photos. However, the packaging could be better. Overall, very satisfied with the purchase!”">
+            </Review>
+            
+            <Review
+                name="FAHIM HOSSAIN"
+                review="“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”">
+            </Review>
+
         </div>
     );
 };
 
 export default CustomerReview;
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <div className='flex flex-col gap-8 m-auto font-inter tracking-[.1rem] max-w-[1440px] px-8 pb-24'>
+            <div className='p-4 md:p-8 font-inter  bg-blue rounded-4xl'>
+                <p className='text-cyan text-reg pb-4 '>NAFISUL HAQUE KHAN</p>
+                <p className='text-orange text-exsml md:text-sml '>“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”</p>
+            </div>
+            <div className='p-4 d:p-8 font-inter  bg-blue rounded-4xl'>
+                <p className='text-cyan text-reg pb-4'>SHAWON AHMED</p>
+                <p className='text-orange text-exsml md:text-sml '>“The winter hoodie I bought is super warm and comfortable. The color looks exactly like the photos. However, the packaging could be better. Overall, very satisfied with the purchase!”</p>
+            </div>
+            <div className='p-4 md:p-8 font-inter  bg-blue rounded-4xl'>
+                <p className='text-cyan text-reg pb-4'>FAHIM HOSSAIN</p>
+                <p className='text-orange text-exsml md:text-sml '>“I ordered a pair of denim jeans and a cotton shirt—both exceeded my expectations! The fabric quality feels premium, and the fitting is perfect. Delivery was fast too. Definitely buying again.”</p>
+            </div>
+        </div> */}

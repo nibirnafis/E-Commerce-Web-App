@@ -3,11 +3,11 @@ import Category from './Category';
 
 const Categories = () => {
 
-    const categories = [ "T-shirt", "Shirt", "Jeans", "hoodie", "jacket", "dress", "sweater", "shorts", "skirt" ]
+    const categories = [ "T-shirt", "Shirt", "Jeans", "Hoodie", "Jacket", "Dress", "Sweater", "Shorts", "Skirt" ]
 
     return (
-        <div>
-            <ul className='flex justify-around'>
+        <div className='bg-black border-t text-cyan'>
+            <ul className='flex justify-between mx-auto max-w-[1440px] py-2'>
             {
                 categories.map((category: string, key) => <Category category={category} key={key}></Category>)
             }
@@ -16,4 +16,4 @@ const Categories = () => {
     );
 };
 
-export default Categories;
+export default Categories; 

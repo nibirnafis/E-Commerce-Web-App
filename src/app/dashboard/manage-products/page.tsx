@@ -31,9 +31,9 @@ const page = () => {
 
 
     return (
-        <div>
+        <div className="flex flex-col md:flex-row mx-auto gap-8 max-w-[1440px] px-8 pb-24">
             <p>Add Products</p>
-            <form onSubmit={handleSubmit} className='flex flex-col'>
+            <form onSubmit={handleSubmit} className='bg-blue flex flex-col'>
                 <label htmlFor='category'>Category: </label>
                 <input type="text" name='category' required/>
 
