@@ -15,13 +15,12 @@ const Product = (prop: {product: TProduct}) => {
 
     const handleIsCarted = () => {
         setIsCarted(!isCarted)
-        console.log("carted", id)
     }
 
     return (
         <>
         <div className='flex flex-col m-auto w-full h-full relative'>
-            <Link href={`/products/${id}`}>
+            <Link href={`http://localhost:3000/products/${id}`}>
                 <div className='flex flex-col-reverse bg-blue w-full h-[287px] rounded-2xl'>
                     <div className='flex flex-col justify-between items-center pb-4 px-4'>
                         <p className='font-inter text-cyan text-sml pb-1'>{title}</p>

@@ -10,6 +10,7 @@ import Categories from './Categories';
 
 const Navbar = () => {
     return (
+        <>
         <nav className='bg-blue sticky top-0 z-1'>
             <div className='reponsive navbar'>
                 <Link href="/">
@@ -19,8 +20,9 @@ const Navbar = () => {
                 <ThemeButton></ThemeButton>
                 {/* <SearchBar></SearchBar> */}
             </div>
-            <Categories></Categories>
+        <Categories></Categories>
         </nav>
+        </>
     );
 };
 

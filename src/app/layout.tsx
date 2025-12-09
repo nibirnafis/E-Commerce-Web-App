@@ -20,7 +20,7 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-black text-cyan flex flex-col justify-between leading-none min-h-screen`}>
         <Navbar></Navbar>
-        {children}
+          {children}
         <Footer></Footer>
       </body>
     </html>

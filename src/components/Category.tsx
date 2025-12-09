@@ -8,7 +8,7 @@ const Category = ({category}: {category:string}) => {
     return (
         <>
         <div className='text-exsml font-inter'>
-            <Link href={`/products/category/${category}`}>{upperCassed}</Link>
+            <Link href={`http://localhost:3000/products/category/${category}`}>{upperCassed}</Link>
         </div>
         </>
     );
