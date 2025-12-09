@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Review = ({name, review}) => {
+
+const Review = ({name, review}: { name: string, review: string}) => {
     return (
         <div>
             <div className='p-4 md:p-8 font-inter  bg-blue rounded-4xl'>

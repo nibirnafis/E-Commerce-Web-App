@@ -16,7 +16,6 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
 
         const data =  await res.json()
 
-        console.log(data.res)
         return data.res
 
     }
@@ -52,7 +51,9 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
             </div>
 
             <div className='flex flex-col grow justify-between max-w-[896px] h-[320px] md:h-[448px]'>
-                <p className='text-sml bg-blue py-2 px-4'>{product.category}</p>
+                <div className='flex'>
+                    <p className='text-sml bg-blue py-2 px-4'>{product.category}</p>
+                </div>
                 <div className='flex justify-between '>
                     <p className='font-ironManOfWar text-med md:text-lrg'>{product.title}</p>
                     <ShoppingCart className=''/>

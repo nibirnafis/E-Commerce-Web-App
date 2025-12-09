@@ -10,7 +10,7 @@ import React, { useRef } from 'react';
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrambleTextPlugin) 
 
 
-const Title = ({t1, t2}) => {
+const Title = ({t1, t2}: { t1: string, t2: string}) => {
 
     const container = useRef(null)
 

@@ -18,7 +18,7 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-black text-cyan flex flex-col justify-between leading-none min-h-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-black2 text-cyan flex flex-col justify-between leading-none min-h-screen`}>
         <Navbar></Navbar>
           {children}
         <Footer></Footer>
@@ -26,6 +26,3 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
     </html>
   );
 }
-
-
-// md:max-w-[820px] lg:max-w-full

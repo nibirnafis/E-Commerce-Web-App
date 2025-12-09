@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link';
 import React from 'react';
-import SearchBar from './SearchBar';
 import Routes from './Routes';
 import ThemeButton from './ThemeButton';
 import Categories from './Categories';
