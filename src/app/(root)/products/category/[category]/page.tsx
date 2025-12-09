@@ -14,7 +14,7 @@ const Page = () => {
 
     useEffect(()=>{
         const loadData = async() => {
-            const res = await fetch(`http://localhost:3000/api/products/category/${params.category}`, {
+            const res = await fetch(`/api/products/category/${params.category}`, {
                 // cache: "no-store",
             })
             const data =  await res.json()
