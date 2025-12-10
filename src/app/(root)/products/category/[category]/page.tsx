@@ -14,7 +14,7 @@ const Page = () => {
 
     useEffect(()=>{
         const loadData = async() => {
-            const res = await fetch(`https://e-commerce-web-app-five-nu.vercel.app/api/products/category/${params.category}`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${params.category}`, {
                 // cache: "no-store",
             })
             const data =  await res.json()
