@@ -10,7 +10,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id
 
     const loadData = async() => {
-        const res = await fetch(`/api/products/${id}`, {
+        const res = await fetch(`https://e-commerce-web-app-five-nu.vercel.app/api/products/${id}`, {
             // cache: "no-store",
         })
 
