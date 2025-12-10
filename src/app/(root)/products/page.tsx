@@ -5,7 +5,7 @@ import { TProduct } from '@/types/Types';
 
 
 const loadData = async () => {
-    const res = await fetch("http://localhost:3000/api/products/allproducts", {
+    const res = await fetch("https://e-commerce-web-app-five-nu.vercel.app/api/products/allproducts", {
         cache: "no-store",
     })
     return res.json()
