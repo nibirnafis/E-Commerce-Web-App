@@ -58,7 +58,7 @@
     
     .section-text{
 
-        @apply text-center my-16 md:my-[88px] px-8;
+        @apply text-center my-16 md:my-24 px-8;
 
         @layer base{
             h1{
