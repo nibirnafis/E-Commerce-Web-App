@@ -39,10 +39,10 @@ const Popular = ({p}: IProps) => {
         {
             serial%2 == 1 ? 
             <div ref={container} className='flex flex-col justify-end w-full m-auto relative'>
-                <div className='scl bg-blue flex flex-col w-full h-[448px] rounded-4xl'>
-                    <p className='text-center font-inter pt-6 text-cyan text-sml'>{title}</p>
+                <div className='scl bg-blue flex flex-col w-full h-[448px] rounded-2xl'>
+                    <p className='text-center font-ironManOfWar pt-6 text-cyan text-reg'>{title}</p>
                 </div>
-                <div className='overflow-clip w-full h-[448px] rounded-4xl absolute'>
+                <div className='overflow-clip w-full h-[448px] rounded-2xl absolute'>
                     <Image
                         className="w-full h-full transition-transform hover:scale-110 object-cover"
                         src={img_url}
@@ -54,10 +54,10 @@ const Popular = ({p}: IProps) => {
             </div>
             :
             <div ref={container} className='flex flex-col justify-start w-full m-auto relative'>
-                <div className='scl bg-blue flex flex-col-reverse w-full h-[448px] rounded-4xl'>
-                    <p className='text-center font-inter pb-6 text-cyan text-sml'>{title}</p>
+                <div className='scl bg-blue flex flex-col-reverse w-full h-[448px] rounded-2xl'>
+                    <p className='text-center font-ironManOfWar pb-6 text-cyan text-reg'>{title}</p>
                 </div>
-                <div className='overflow-clip w-full h-[448px] rounded-4xl absolute'>
+                <div className='overflow-clip w-full h-[448px] rounded-2xl absolute'>
                     <Image
                         className="w-full h-full transition-transform hover:scale-110 object-cover"
                         src={img_url}

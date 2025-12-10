@@ -13,13 +13,14 @@ const Product = (prop: {product: TProduct}) => {
 
     const [ isCarted, setIsCarted ] = useState(false)
 
+
     const handleIsCarted = () => {
         setIsCarted(!isCarted)
     }
 
     return (
         <>
-        <div className='flex flex-col m-auto w-full h-full relative'>
+        <div className='flex flex-col m-auto w-full h-full tracking-normal relative'>
             <Link href={`${process.env.NEXT_PUBLIC_BASE_API_URL}/products/${id}`}>
                 <div className='flex flex-col-reverse bg-blue w-full h-[287px] rounded-2xl'>
                     <div className='flex flex-col justify-between items-center pb-4 px-4'>

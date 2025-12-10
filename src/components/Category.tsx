@@ -1,13 +1,21 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
+import { useParams } from 'next/navigation';
 
 const Category = ({category}: {category:string}) => {
 
-    const upperCassed = category.toLocaleUpperCase()
+    const params = useParams()
+    const upperCassed = category.toUpperCase()
+
 
     return (
         <>
-        <Link className='text-exsml font-inter text-center py-1 rounded-l bg-blue text-cyan' href={`/products/category/${category}`}>{upperCassed}</Link>
+        <Link className={
+            params.category == category ? 
+            'text-exsml font-inter text-center py-1 rounded-l bg-orange text-black'
+            :
+            'text-exsml font-inter text-center py-1 rounded-l bg-blue text-cyan'
+        } href={`/products/category/${category}`}>{upperCassed}</Link>
         </>
     );
 };

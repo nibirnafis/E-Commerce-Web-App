@@ -18,7 +18,7 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
 
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-black2 text-cyan flex flex-col justify-between leading-none min-h-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}  antialiased bg-black2 text-cyan flex flex-col justify-between tracking-[.1rem] leading-none min-h-screen`}>
         <Navbar></Navbar>
         <div className="grow">
           {children}
