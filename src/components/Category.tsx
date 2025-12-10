@@ -7,9 +7,7 @@ const Category = ({category}: {category:string}) => {
 
     return (
         <>
-        <div className='text-exsml font-inter'>
-            <Link href={`/products/category/${category}`}>{upperCassed}</Link>
-        </div>
+        <Link className='text-exsml font-inter text-center py-1 rounded-l bg-blue text-cyan' href={`/products/category/${category}`}>{upperCassed}</Link>
         </>
     );
 };

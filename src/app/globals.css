@@ -37,9 +37,9 @@
 
 @layer components {
 
-    .reponsive{
+    .responsive{
         /* @apply max-w-[360px] md:max-w-[620px] lg:max-w-[1440px] */
-        @apply max-w-[1440px] px-8 lg:px-0
+        @apply px-8 lg:px-0 lg:max-w-[1440px]
     }
 
     

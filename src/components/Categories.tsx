@@ -3,11 +3,11 @@ import Category from './Category';
 
 const Categories = () => {
 
-    const categories = [ "T-shirt", "Shirt", "Jeans", "Hoodie", "Jacket", "Dress", "Sweater", "Shorts", "Skirt" ]
+    const categories = [ "Shirt", "Jeans", "Hoodie", "Jacket", "Dress", "Sweater", "Shorts", "Skirt" ]
 
     return (
-        <div className='bg-black text-cyan'>
-            <ul className='flex justify-between mx-auto max-w-[1440px] py-2'>
+        <div className='bg-black'>
+            <ul className='grid grid-cols-4 lg:grid-cols-8 gap-1 py-1 mx-auto responsive font-bold'>
             {
                 categories.map((category: string, key) => <Category category={category} key={key}></Category>)
             }
