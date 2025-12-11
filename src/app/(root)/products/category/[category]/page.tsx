@@ -65,7 +65,7 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
     const loadData = async() => {
         // "use cache"
 
-        const res = await fetch(`http://localhost:3000/api/products/category/${category}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${category}`, {
             cache: "no-store",
         })
         const data =  await res.json()
