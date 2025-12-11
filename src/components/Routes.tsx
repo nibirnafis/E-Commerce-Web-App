@@ -25,7 +25,7 @@ const Routes = () => {
                 :
                 <button onClick={handleOpen}>{"v"}</button>
             }
-            <div onClick={handleOpen} className={!isOpen ? "hidden" : "flex flex-col absolute top-4 bg-black gap-4 p-4"}>
+            <div onClick={handleOpen} className={!isOpen ? "hidden" : "flex flex-col absolute top-4 bg-black gap-4 p-4 rounded-lg"}>
             {
                 routes.map((route, key) => <Route route={route} key={key}></Route>)
             }

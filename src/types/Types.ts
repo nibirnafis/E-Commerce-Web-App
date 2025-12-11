@@ -6,5 +6,6 @@ export type TProduct = {
     img_url: string,
     price: number,
     color: string,
-    available: boolean
+    available: boolean,
+    quantity: number
 }

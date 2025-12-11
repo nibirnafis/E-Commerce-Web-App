@@ -22,4 +22,5 @@ model Product {
   price     Int
   color     String
   available Boolean @default(true)
+  quantity  Int     @default(10)
 }

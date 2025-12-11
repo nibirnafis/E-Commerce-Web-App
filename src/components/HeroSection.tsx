@@ -36,7 +36,7 @@ const HeroSection = () => {
 
 
     return (
-        <div ref={container} className='flex flex-col md:flex-row mx-auto gap-8 max-w-[1440px] px-8 pb-16 md:pb-24'>
+        <div ref={container} className='flex flex-col md:flex-row mx-auto gap-4 md:gap-8 max-w-[1440px] px-8 pb-16 md:pb-24'>
             <div className='c1 opacity-0 overflow-clip w-full h-[512px] rounded-2xl'>
                 <Image
                     className="img w-full h-full transition-transform hover:scale-110 object-cover"
@@ -46,7 +46,7 @@ const HeroSection = () => {
                     height={512}>
                 </Image>
             </div>
-            <div className='flex flex-col gap-8'>
+            <div className='flex flex-col gap-4 md:gap-8'>
                 <div className='c2 opacity-0 overflow-clip w-full h-24 rounded-2xl'>
                     <Image
                         className="w-full h-full transition-transform hover:scale-110 object-cover"

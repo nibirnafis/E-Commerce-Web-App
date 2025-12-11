@@ -3,7 +3,7 @@ import Review from './Review';
 
 const CustomerReview = () => {
     return (
-        <div className='flex flex-col gap-8 m-auto font-inter tracking-[.1rem] max-w-[1440px] px-8 pb-16 md:pb-24'>
+        <div className='flex flex-col gap-4 md:gap-8 m-auto font-inter tracking-[.1rem] max-w-[1440px] px-8 pb-16 md:pb-24'>
             
             <Review
                 name="NAFISUL HAQUE KHAN"

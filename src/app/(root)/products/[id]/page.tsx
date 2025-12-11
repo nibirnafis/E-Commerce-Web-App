@@ -121,10 +121,10 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
         <>
         <div className='flex flex-col  md:flex-row gap-8 max-w-[1440px] mx-auto my-16 md:my-24 px-8'>
 
-            <div className='flex flex-col bg-blue max-w-[448px] max-h-[512px] rounded-4xl'>
+            <div className='flex flex-col bg-blue max-w-[448px] max-h-[512px] rounded-2xl'>
                 <div className='w-full h-full mx-auto'>
                     <Image
-                        className="max-w-full max-h-full object-cover rounded-4xl"
+                        className="max-w-full max-h-full object-cover rounded-2xl"
                         src={product.img_url}
                         alt="Cover Picture 1"
                         width={480}
@@ -140,7 +140,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
 
             <div className='flex flex-col grow justify-between max-w-[896px] h-64 md:h-[448px]'>
                 <div className='flex'>
-                    <p className='text-sml bg-blue py-2 px-4'>{product.category}</p>
+                    <p className='text-sml bg-blue py-2 px-4'>{product.category.toUpperCase()}</p>
                 </div>
                 <div className='flex justify-between'>
                     <p className='font-ironManOfWar text-med md:text-lrg'>{product.title}</p>

@@ -1,7 +1,6 @@
 "use client";
 
 
-
 const page = () => {
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -16,10 +15,11 @@ const page = () => {
         const img_url = form.img_url.value;
         const price = Number(form.price.value);
         const color = form.color.value;
+        const quantity = Number(form.quantity.value);
 
-        const product = { category, title, details, img_url, price, color }
+        const product = { category, title, details, img_url, price, color, quantity }
 
-        const result = await fetch("http://localhost:3000/api/dashboard/manage-products", {
+        const result = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/dashboard/manage-products`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(product)
@@ -51,6 +51,9 @@ const page = () => {
 
                 <label htmlFor='color'>Color: </label>
                 <input type="text" name='color' required/>
+                
+                <label htmlFor='quantity'>Quantity: </label>
+                <input type="text" name='quantity' required/>
 
                 {/* <label htmlFor='available'>Available: </label>
                 <input type="text" name='available'/> */}
