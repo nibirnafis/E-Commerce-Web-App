@@ -138,17 +138,17 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
                 </div>
             </div>
 
-            <div className='flex flex-col grow justify-between max-w-[896px] h-[320px] md:h-[448px]'>
+            <div className='flex flex-col grow justify-between max-w-[896px] h-64 md:h-[448px]'>
                 <div className='flex'>
                     <p className='text-sml bg-blue py-2 px-4'>{product.category}</p>
                 </div>
-                <div className='flex justify-between '>
+                <div className='flex justify-between'>
                     <p className='font-ironManOfWar text-med md:text-lrg'>{product.title}</p>
                     <ShoppingCart className=''/>
                 </div>
                 <p className='font-inter text-sml md:text-reg text-orange'>{product.price} tk</p>
-                <p className='text-white text-sml'>{product.details}</p>
-                <p className='text-white text-sml'>Stock: {product.available ? "Available" : "Not Available"}</p>
+                <p className='text-white text-exsml md:text-sml'>{product.details}</p>
+                <p className='text-white text-exsml md:text-sml'>Stock: {product.available ? "Available" : "Not Available"}</p>
                 <button className='bg-[#55C33A] text-blue py-2 px-4 rounded-lg max-w-32 font-inter font-bold'>BUY NOW</button>
             </div>
                      
@@ -156,7 +156,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
 
 
         <div>
-            <h1 className='font-ironManOfWar text-med md:text-lrg  text-center my-[64px] md:my-[88px]'>CUSTOMERS REVIEW</h1>
+            <h1 className='font-ironManOfWar text-semilrg text-center my-8 md:my-16 lg:my-24'>CUSTOMERS REVIEW</h1>
             <CustomerReview></CustomerReview>
         </div>
 

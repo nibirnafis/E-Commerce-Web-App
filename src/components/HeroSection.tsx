@@ -36,7 +36,7 @@ const HeroSection = () => {
 
 
     return (
-        <div ref={container} className='flex flex-col md:flex-row mx-auto gap-8 max-w-[1440px] px-8 pb-24'>
+        <div ref={container} className='flex flex-col md:flex-row mx-auto gap-8 max-w-[1440px] px-8 pb-16 md:pb-24'>
             <div className='c1 opacity-0 overflow-clip w-full h-[512px] rounded-2xl'>
                 <Image
                     className="img w-full h-full transition-transform hover:scale-110 object-cover"

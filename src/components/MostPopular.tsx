@@ -29,7 +29,7 @@ const MostPopular = () => {
 
 
     return (
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mx-auto gap-8 max-w-[1440px] px-8 pb-24'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mx-auto gap-8 max-w-[1440px] px-8 pb-16 md:pb-24'>
             {
                 Populars.map((p, key)=> <Popular p={p} key={key}></Popular>)
             }
