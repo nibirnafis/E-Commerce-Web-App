@@ -5,8 +5,11 @@ const Footer = () => {
         <div className="bg-blue">
             <div className="responsive footer">
                 <Link href="/">
-                    <p className='font-ironManOfWar text-med'>CLORR</p>
+                    <p className='font-ironManOfWar text-reg'>CLORR</p>
                 </Link>
+                <div>
+                    
+                </div>
             </div>
         </div>
     );

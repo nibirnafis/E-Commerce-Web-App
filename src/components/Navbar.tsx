@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className='bg-blue sticky top-0 z-1'>
             <div className='responsive navbar'>
                 <Link href="/">
-                    <p className='font-ironManOfWar text-cyan text-med'>CLORR</p>
+                    <p className='font-ironManOfWar text-cyan text-reg md:text-med'>CLORR</p>
                 </Link>
                 <Routes></Routes>
                 {/* <ThemeButton></ThemeButton> */}

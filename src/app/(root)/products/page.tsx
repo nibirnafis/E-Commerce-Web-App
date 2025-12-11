@@ -5,6 +5,8 @@ import { TProduct } from '@/types/Types';
 
 
 const loadData = async () => {
+    // "use cache"
+
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/allproducts`, {
         cache: "no-store",
     })

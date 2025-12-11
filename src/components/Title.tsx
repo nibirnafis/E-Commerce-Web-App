@@ -14,6 +14,7 @@ const Title = ({t1, t2}: { t1: string, t2: string}) => {
 
     const container = useRef(null)
 
+    
     useGSAP(()=>{
 
         gsap.timeline({

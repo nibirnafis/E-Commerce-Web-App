@@ -1,5 +1,5 @@
 // CSR
-"use client"
+/* "use client"
 import Product from '@/components/Product';
 import Title from '@/components/Title';
 import { TProduct } from '@/types/Types';
@@ -16,7 +16,6 @@ const Page = () => {
     useEffect(()=>{
         const loadData = async() => {
             const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${params.category}`, {
-                // cache: "no-store",
             })
             const data =  await res.json()
 
@@ -47,13 +46,15 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default Page; */
+
+
+
 
 
 
 // SSR
-
-/* import Product from '@/components/Product';
+import Product from '@/components/Product';
 import { TProduct } from '@/types/Types';
 
 
@@ -62,6 +63,8 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
     const {category} = await params
 
     const loadData = async() => {
+        // "use cache"
+
         const res = await fetch(`http://localhost:3000/api/products/category/${category}`, {
             cache: "no-store",
         })
@@ -81,7 +84,7 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
 
     return (
         <>
-        <p className='text-center font-ironManOfWar text-lrg pb-4'>{category}</p>
+        <p className='text-center font-ironManOfWar text-lrg my-16 md:my-24'>{category}</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mx-auto max-w-[1440px] px-8 pb-24">
             {
                 products.map((product: TProduct, key: number) => <Product product={product} key={key}></Product>)
@@ -91,4 +94,4 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
     );
 };
 
-export default Page; */
+export default Page;

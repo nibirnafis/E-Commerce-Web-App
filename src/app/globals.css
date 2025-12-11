@@ -49,7 +49,7 @@
     
     
     .footer{
-        @apply flex justify-between items-center my-4 mx-auto
+        @apply flex justify-between items-center my-2 mx-auto
     }
 
 
@@ -58,14 +58,14 @@
     
     .section-text{
 
-        @apply text-center my-16 md:my-24 px-8;
+        @apply text-center my-16 lg:my-16 px-8;
 
         @layer base{
             h1{
-                @apply font-ironManOfWar text-lrg pb-4
+                @apply font-ironManOfWar text-med lg:text-lrg pb-2 lg:pb-4
             }
             h6{
-                @apply font-inter text-sml tracking-[.1rem]
+                @apply font-inter text-exsml md:text-sml tracking-[.1rem]
             }
         }
     }

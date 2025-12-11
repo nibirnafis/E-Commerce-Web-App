@@ -6,7 +6,7 @@ const Categories = () => {
 
     return (
         <div className='bg-black'>
-            <ul className='grid grid-cols-4 lg:grid-cols-8 gap-1 py-1 mx-auto responsive max-w-full lg:max-w-[1440px] font-bold'>
+            <ul className='grid grid-cols-4 lg:grid-cols-8 gap-1 py-1 mx-auto responsive max-w-full lg:max-w-[1440px]'>
             {
                 categories.map((category: string, key) => <Category category={category} key={key}></Category>)
             }
