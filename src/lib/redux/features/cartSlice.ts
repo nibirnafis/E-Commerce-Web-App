@@ -1,4 +1,3 @@
-import CartedProduct from '@/components/CartedProduct';
 import { TCartedProduct } from '@/types/Types';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 

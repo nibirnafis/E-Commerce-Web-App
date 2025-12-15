@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ReduxProvider } from "@/lib/redux/Provider";
+import { Suspense } from "react";
 
 
 /* const geistSans = Geist({variable: "--font-geist-sans", subsets: ["latin"]});
@@ -24,7 +25,9 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
         <ReduxProvider>
           <Navbar></Navbar>
           <div className="grow">
-            {children}
+            <Suspense>
+              {children}
+            </Suspense>
           </div>
           <Footer></Footer>
         </ReduxProvider>
