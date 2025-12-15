@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import { ReduxProvider } from "@/lib/redux/Provider";
+import { ReduxProvider } from "@/lib/redux/Provider";
 
 
 /* const geistSans = Geist({variable: "--font-geist-sans", subsets: ["latin"]});
@@ -21,13 +21,13 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
   return (
     <html lang="en">
       <body className={` antialiased bg-black2 text-cyan flex flex-col justify-between tracking-[.1rem] leading-none min-h-screen`}>
-        {/* <ReduxProvider> */}
+        <ReduxProvider>
           <Navbar></Navbar>
           <div className="grow">
             {children}
           </div>
           <Footer></Footer>
-        {/* </ReduxProvider> */}
+        </ReduxProvider>
       </body>
     </html>
   );

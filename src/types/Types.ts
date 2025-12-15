@@ -1,4 +1,4 @@
-export type TProduct = {
+export interface TProduct {
     id: number,
     category: string,
     title: string,
@@ -8,4 +8,10 @@ export type TProduct = {
     color: string,
     available: boolean,
     quantity: number
+}
+
+
+export interface TCartedProduct extends TProduct {
+    carted: boolean,
+    cartedQuantity: number
 }

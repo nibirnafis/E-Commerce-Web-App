@@ -12,9 +12,9 @@ const Category = ({category}: {category:string}) => {
         <>
         <Link className={
             params.category == category ? 
-            'text-exsml font-inter text-center py-1 rounded-l bg-orange text-black'
+            'text-exsml font-inter text-center py-1 rounded bg-orange text-black'
             :
-            'text-exsml font-inter text-center py-1 rounded-l bg-blue text-cyan'
+            'text-exsml font-inter text-center py-1 rounded bg-blue text-cyan'
         } href={`/products/category/${category}`}>{upperCassed}</Link>
         </>
     );

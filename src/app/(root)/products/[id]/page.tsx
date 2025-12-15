@@ -86,8 +86,8 @@ export default Page; */
 
 
 // SSR
+import CartButton from '@/components/CartButton';
 import CustomerReview from '@/components/CustomerReview';
-import { ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 
 
@@ -96,16 +96,15 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id
 
     const loadData = async() => {
-        // "use cache"
+        "use cache"
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, /* {
             cache: "no-store",
-        })
+        } */)
 
         const data =  await res.json()
 
         return data.res
-
     }
 
     const product = await loadData()
@@ -144,7 +143,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
                 </div>
                 <div className='flex justify-between'>
                     <p className='font-ironManOfWar text-med md:text-lrg'>{product.title}</p>
-                    <ShoppingCart className=''/>
+                    <CartButton product={product}></CartButton>
                 </div>
                 <p className='font-inter text-sml md:text-reg text-orange'>{product.price} tk</p>
                 <p className='text-white text-exsml md:text-sml'>{product.details}</p>

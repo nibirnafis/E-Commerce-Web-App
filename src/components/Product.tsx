@@ -1,22 +1,13 @@
-"use client"
 import { TProduct } from '@/types/Types';
-import { ShoppingCart } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import CartButton from './CartButton';
 
 
 
 const Product = (prop: {product: TProduct}) => {
 
     const { id, title, img_url, price } = prop.product
-
-    const [ isCarted, setIsCarted ] = useState(false)
-
-
-    const handleIsCarted = () => {
-        setIsCarted(!isCarted)
-    }
 
     return (
         <>
@@ -30,9 +21,9 @@ const Product = (prop: {product: TProduct}) => {
                 </div>
             </Link>
             <div className='overflow-clip w-full h-[223px] rounded-2xl absolute'>
-                <button onClick={handleIsCarted} className={ !isCarted ? 'absolute bg-blue bottom-4 right-4 rounded-full' : 'absolute bg-orange bottom-4 right-4 rounded-full'}>
-                    <ShoppingCart className={ !isCarted ? 'scale-75' : 'scale-75 text-black' }/>
-                </button>
+                <div className='absolute bottom-4 right-4'>
+                    <CartButton product={prop.product}></CartButton>
+                </div>
                 <Image
                     className="w-full h-full object-cover"
                     src={img_url}

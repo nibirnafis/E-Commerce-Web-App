@@ -1,19 +1,18 @@
-// lib/redux/store.ts
-
 import { configureStore } from '@reduxjs/toolkit';
-// Import your root reducer (or combine them if you have multiple slices)
-import userReducer from './features/userSlice'; 
+import cartReducer from './features/cartSlice'; 
 
-export const store = configureStore({
-  reducer: {
-    user: userReducer,
-    // Add other slices/reducers here
-  },
-  // Add middleware/dev tools configuration if needed
-});
+export const makeStore = () => {
+  return configureStore({
+    reducer: {
+      cart: cartReducer,
+    },
+  });
+} 
 
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+/* export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch; */
 
-// Note: You must export the store instance itself.
+
+export type AppStore = ReturnType<typeof makeStore>
+export type RootState = ReturnType<AppStore['getState']>
+export type AppDispatch = AppStore['dispatch']
