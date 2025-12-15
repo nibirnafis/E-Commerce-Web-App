@@ -21,17 +21,17 @@ export default function RootLayout( {children,}: Readonly<{children: React.React
 
   return (
     <html lang="en">
-      <Suspense>
-        <body className={`antialiased bg-black2 text-cyan flex flex-col justify-between tracking-[.1rem] leading-none min-h-screen`}>
-            <ReduxProvider>
-              <Navbar></Navbar>
-              <div className="grow">
-                  {children}
-              </div>
-              <Footer></Footer>
-            </ReduxProvider>
-        </body>
-      </Suspense>
+      <body className={`antialiased bg-black2 text-cyan flex flex-col justify-between tracking-[.1rem] leading-none min-h-screen`}>
+        <Suspense>
+          <ReduxProvider>
+            <Navbar></Navbar>
+            <div className="grow">
+                {children}
+            </div>
+            <Footer></Footer>
+          </ReduxProvider>
+        </Suspense>
+      </body>
     </html>
   );
 }
