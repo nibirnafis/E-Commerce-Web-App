@@ -101,7 +101,6 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
         const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, /* {
             cache: "no-store",
         } */)
-
         const data =  await res.json()
 
         return data.res

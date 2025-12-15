@@ -1,5 +1,5 @@
 import { TCartedProduct } from '@/types/Types';
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 
 type TInitialState = {
@@ -14,8 +14,6 @@ const initialState: TInitialState = {
   totalQuantity: 0,
   totalAmount: 0
 };
-
-
 
 
 
