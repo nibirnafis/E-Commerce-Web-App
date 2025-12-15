@@ -1,5 +1,5 @@
 import { decreaseQuantity, increaseQuantity } from "@/lib/redux/features/cartSlice";
-import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks";
+import { useAppDispatch } from "@/lib/redux/hooks";
 import { TCartedProduct } from "@/types/Types";
 import Image from "next/image";
 
