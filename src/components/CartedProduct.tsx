@@ -30,7 +30,7 @@ const CartedProduct = ({product}: {product: TCartedProduct}) => {
                 height={64}
             >
             </Image>
-            <p>{product.title}</p>
+            <p>{(product.title).toUpperCase()}</p>
             <div className="flex items-center gap-1">
                 <button onClick={handleDecrease} className="bg-black p-1 rounded-full text-orange">-</button>
                 <p>{product.cartedQuantity}</p>

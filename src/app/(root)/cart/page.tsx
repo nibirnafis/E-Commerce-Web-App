@@ -18,16 +18,17 @@ const Page = () => {
                 cart.length === 0 ?
                 <p className='text-center'>YOUR CART IS EMPTY</p>
                 :
-                <div className="flex flex-col gap-4 md:gap-8 mx-auto max-w-[1440px] px-8 pb-8">
+                <div className="flex flex-col gap-4 mx-auto max-w-[1440px] px-8 pb-24">
                     {
                         cart.map((product: TCartedProduct, key: number) => <CartedProduct product={product} key={key}></CartedProduct>)
                     }
+                    <div className='flex justify-end gap-4'>
+                        <p className='col-start-1 col-end-2'> Total:</p>
+                        <p className='col-start-4'>{totalAmount}tk.</p>
+                    </div>
                 </div>
             }
-            <div className='flex justify-end mx-auto max-w-[1440px] gap-4 px-12 pb-24'>
-                {/* <p className='col-start-1 col-end-2'> Amount:</p> */}
-                <p className='col-start-4'>{totalAmount}tk.</p>
-            </div>
+            
         </div>
     );
 };

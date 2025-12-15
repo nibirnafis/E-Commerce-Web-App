@@ -39,7 +39,7 @@ const cartSlice = createSlice({
       state.items = state.items.filter(p => p.id !== action.payload.id)
       console.log("Item removed", state.items)
     },
-    increaseQuantity: (state, action: PayloadAction<TCartedProduct>) =>{
+    increaseQuantity: (state, action) =>{
       const product = action.payload
       const cartedProduct = state.items.find(p => p.id === product.id)
       
