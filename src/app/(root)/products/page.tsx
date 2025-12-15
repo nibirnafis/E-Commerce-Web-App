@@ -12,7 +12,7 @@ const loadData = async () => {
         cache: "no-store",
     } */)
     const data = await res.json()
-    const products = data.res
+    const products = await data.res
 
     return products
 }
