@@ -56,6 +56,7 @@ export default Page; */
 // SSR
 import Product from '@/components/Product';
 import { TProduct } from '@/types/Types';
+import { Suspense } from 'react';
 
 
 const Page = async({ params }: { params: Promise<{ category: string }>}) => {
@@ -77,7 +78,7 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
 
 
 
-    if (!products || products.length === 0) {
+    if (!products) {
         return <p className='text-center'>No products found in the {category} category.</p>; 
     }
 
@@ -87,7 +88,11 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
         <p className='text-center font-ironManOfWar text-lrg my-16 md:my-24'>{category}</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8 mx-auto max-w-[1440px] px-8 pb-24">
             {
-                products.map((product: TProduct, key: number) => <Product product={product} key={key}></Product>)
+                products.map((product: TProduct, key: number) => (
+                    <Suspense fallback={<p>suspensing</p>} key={key}>
+                        <Product product={product} key={key}></Product>
+                    </Suspense>
+                ))
             }
         </div>
         </>
