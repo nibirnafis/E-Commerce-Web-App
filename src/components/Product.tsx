@@ -1,7 +1,7 @@
 import { TProduct } from '@/types/Types';
 import Image from 'next/image';
 import Link from 'next/link';
-import CartButton from './CartButton';
+// import CartButton from './CartButton';
 
 
 
@@ -22,7 +22,7 @@ const Product = (prop: {product: TProduct}) => {
             </Link>
             <div className='overflow-clip w-full h-[223px] rounded-2xl absolute'>
                 <div className='absolute bottom-4 right-4'>
-                    <CartButton product={prop.product}></CartButton>
+                    {/* <CartButton product={prop.product}></CartButton> */}
                 </div>
                 <Image
                     className="w-full h-full object-cover"

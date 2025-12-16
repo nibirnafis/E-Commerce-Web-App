@@ -9,7 +9,7 @@ import { Suspense } from 'react';
 const loadData = async () => {
     "use cache"
 
-    const res = await fetch(`https://e-commerce-web-app-five-nu.vercel.app/api/products`, /* {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products`, /* {
         cache: "no-store",
     } */)
     const data = await res.json()

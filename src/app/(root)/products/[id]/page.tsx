@@ -86,7 +86,7 @@ export default Page; */
 
 
 // SSR
-import CartButton from '@/components/CartButton';
+// import CartButton from '@/components/CartButton';
 import CustomerReview from '@/components/CustomerReview';
 import Image from 'next/image';
 
@@ -98,7 +98,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
     const loadData = async() => {
         "use cache"
 
-        const res = await fetch(`https://e-commerce-web-app-five-nu.vercel.app/api/products/${id}`, /* {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, /* {
             cache: "no-store",
         } */)
         const data =  await res.json()
@@ -142,7 +142,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
                 </div>
                 <div className='flex justify-between'>
                     <p className='font-ironManOfWar text-med md:text-lrg'>{product.title}</p>
-                    <CartButton product={product}></CartButton>
+                    {/* <CartButton product={product}></CartButton> */}
                 </div>
                 <p className='font-inter text-sml md:text-reg text-orange'>{product.price} tk</p>
                 <p className='text-white text-exsml md:text-sml'>{product.details}</p>
