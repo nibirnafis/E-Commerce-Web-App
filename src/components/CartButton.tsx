@@ -1,4 +1,4 @@
-/* "use client"
+"use client"
 
 import { addToCart, removeFromCart } from "@/lib/redux/features/cartSlice";
 import { useAppDispatch, useAppSelector } from "@/lib/redux/hooks";
@@ -50,4 +50,4 @@ const CartButton = ({product}: {product: TProduct}) => {
     );
 };
 
-export default CartButton; */
+export default CartButton;
