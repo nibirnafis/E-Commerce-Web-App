@@ -98,7 +98,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
     const loadData = async() => {
         "use cache"
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, /* {
+        const res = await fetch(`https://e-commerce-web-app-five-nu.vercel.app/api/products/${id}`, /* {
             cache: "no-store",
         } */)
         const data =  await res.json()
