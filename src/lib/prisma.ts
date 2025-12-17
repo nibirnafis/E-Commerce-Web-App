@@ -1,4 +1,4 @@
-import { PrismaClient } from '@db/client'; // Import from your custom output
+import { PrismaClient } from '../generated/prisma/client'; // Import from your custom output
 import { PrismaPg } from '@prisma/adapter-pg';
 import { Pool } from 'pg';
 
