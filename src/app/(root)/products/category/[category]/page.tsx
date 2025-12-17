@@ -64,11 +64,11 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
     const {category} = await params
 
     const loadData = async() => {
-        "use cache"
+        // "use cache"
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${category}`, /* {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${category}`, {
             cache: "no-store",
-        } */)
+        })
         const data =  await res.json()
 
         return data.res

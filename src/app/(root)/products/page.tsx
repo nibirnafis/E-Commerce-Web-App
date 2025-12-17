@@ -7,11 +7,11 @@ import { Suspense } from 'react';
 
 
 const loadData = async () => {
-    "use cache"
+    // "use cache"
 
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products`, /* {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products`, {
         cache: "no-store",
-    } */)
+    })
     const data = await res.json()
 
     return data.res
