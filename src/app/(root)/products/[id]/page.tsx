@@ -92,15 +92,13 @@ import Image from 'next/image';
 
 
 const Page = async( { params }: { params: Promise<{ id: string }> }) => {
-
+    "use cache"
+    
     const id = (await params).id
 
     const loadData = async() => {
-        // "use cache"
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`, {
-            cache: "no-store",
-        })
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/${id}`)
         const data =  await res.json()
 
         return data.res
@@ -111,7 +109,7 @@ const Page = async( { params }: { params: Promise<{ id: string }> }) => {
 
 
     if (!product) {
-        return <p className='text-center'>Loading...</p>;
+        return <p className='text-center'>No products found</p>;
     }
 
 

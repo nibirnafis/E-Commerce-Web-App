@@ -60,17 +60,16 @@ import { Suspense } from 'react';
 
 
 const Page = async({ params }: { params: Promise<{ category: string }>}) => {
+    "use cache"
 
     const {category} = await params
 
     const loadData = async() => {
-        // "use cache"
 
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${category}`, {
-            cache: "no-store",
-        })
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/products/category/${category}`)
         const data =  await res.json()
 
+        console.log(data.res)
         return data.res
     }
 
@@ -88,14 +87,11 @@ const Page = async({ params }: { params: Promise<{ category: string }>}) => {
         <p className='text-center font-ironManOfWar text-lrg my-16 md:my-24'>{category}</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-8 mx-auto max-w-[1440px] px-8 pb-24">
             {
-                products.lenght > 0 ?
                 products.map((product: TProduct, key: number) => (
                     <Suspense fallback={<p>Loading</p>} key={key}>
                         <Product product={product} key={key}></Product>
                     </Suspense>
                 ))
-                :
-                <p className='text-center'>Loading...</p>
             }
         </div>
         </>
